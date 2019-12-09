@@ -4,9 +4,9 @@ const initState = {
 
 const reducer = (state = initState, action) => {
     switch (action.type) {
-      case 'LOGIN_SUCCESS':
+      case 'GET_ACCESS_TOKEN_SUCCESS':
            return { ...state , logindata: '' };
-      case 'LOGIN_FAILED':
+      case 'GET_ACCESS_TOKEN_FAILED':
            return { ...state }
       default: 
            return state;
