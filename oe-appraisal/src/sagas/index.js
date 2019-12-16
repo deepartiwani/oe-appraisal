@@ -1,6 +1,6 @@
 import { all, fork } from 'redux-saga/effects';
-import watchGetAccessTokenLogin from './watchers/getAccessTokenLogin';
+import watchGetUserDetailsSaga from './watchers/watchGetUserDetailsSaga';
 
 export default function* rootSaga() {
-    yield(fork(watchGetAccessTokenLogin))
+    yield(fork(watchGetUserDetailsSaga))
 }
